@@ -30,7 +30,7 @@ This section contains general information about the software.
   </tr>
   <tr>
     <td>Directory sourcecode</td>
-    <td></td>
+    <td>RSSReader/RSSReader/RSSReader/</td>
   </tr>
     <tr>
     <td>Development environment</td>
