@@ -9,6 +9,9 @@ using System.ServiceModel.Syndication;
 
 namespace RSSReader
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Parser
     {
 
