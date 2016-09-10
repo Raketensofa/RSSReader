@@ -86,7 +86,7 @@ namespace RSSReader.GUI
             feed.Link = textBoxFeedLink.Text;
 
             string category = comboBoxFeedCategory.Text;
-            feed.CategoryId = findCategoryId(category);
+            feed.UserCategoryId = findCategoryId(category);
 
             return feed;
         }
@@ -150,7 +150,6 @@ namespace RSSReader.GUI
             if(!string.IsNullOrEmpty(feed.Name) && !string.IsNullOrEmpty(feed.Link))
             {
                 completely = true;
-
             }
 
             return completely;

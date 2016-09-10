@@ -113,7 +113,7 @@ namespace RSSReader
 
             open();
 
-            string sqlStr = "INSERT INTO feeds (name, link, categoryId) VALUES ('" + feed.Name + "', '" + feed.Link + "'," + feed.CategoryId + ")";
+            string sqlStr = "INSERT INTO feeds (name, link, categoryId) VALUES ('" + feed.Name + "', '" + feed.Link + "'," + feed.UserCategoryId + ")";
 
             saved = addData(sqlStr);
 
@@ -201,7 +201,7 @@ namespace RSSReader
                         feed.Id = Convert.ToInt32(reader["id"]);
                         feed.Name = reader["name"].ToString();
                         feed.Link = reader["link"].ToString();
-                        feed.CategoryId = Convert.ToInt32(reader["categoryId"]);
+                        feed.UserCategoryId = Convert.ToInt32(reader["categoryId"]);
 
                         listFeeds.Add(feed);
                     }
