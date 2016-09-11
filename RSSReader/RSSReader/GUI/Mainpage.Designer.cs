@@ -29,72 +29,21 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mainpage));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.startToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.MenuItemCategories = new System.Windows.Forms.ToolStripMenuItem();
-            this.rSSFeedsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.MenuItemAddNewData = new System.Windows.Forms.ToolStripMenuItem();
-            this.MenuItemFeedOverview = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.comboBoxChooseCategory = new System.Windows.Forms.ComboBox();
             this.listViewFeeds = new System.Windows.Forms.ListView();
-            this.buttonRefresh = new System.Windows.Forms.Button();
+            this.columnFeedTitle = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.listViewFeedItems = new System.Windows.Forms.ListView();
             this.feedArticle = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.webBrowser = new System.Windows.Forms.WebBrowser();
-            this.menuStrip1.SuspendLayout();
+            this.buttonManage = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.startToolStripMenuItem,
-            this.rSSFeedsToolStripMenuItem});
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
-            this.menuStrip1.Name = "menuStrip1";
-            // 
-            // startToolStripMenuItem
-            // 
-            this.startToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MenuItemCategories});
-            resources.ApplyResources(this.startToolStripMenuItem, "startToolStripMenuItem");
-            this.startToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Window;
-            this.startToolStripMenuItem.Name = "startToolStripMenuItem";
-            // 
-            // MenuItemCategories
-            // 
-            this.MenuItemCategories.Name = "MenuItemCategories";
-            resources.ApplyResources(this.MenuItemCategories, "MenuItemCategories");
-            this.MenuItemCategories.Click += new System.EventHandler(this.MenuItemCategories_Click);
-            // 
-            // rSSFeedsToolStripMenuItem
-            // 
-            this.rSSFeedsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MenuItemAddNewData,
-            this.MenuItemFeedOverview});
-            resources.ApplyResources(this.rSSFeedsToolStripMenuItem, "rSSFeedsToolStripMenuItem");
-            this.rSSFeedsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Window;
-            this.rSSFeedsToolStripMenuItem.Name = "rSSFeedsToolStripMenuItem";
-            // 
-            // MenuItemAddNewData
-            // 
-            this.MenuItemAddNewData.Name = "MenuItemAddNewData";
-            resources.ApplyResources(this.MenuItemAddNewData, "MenuItemAddNewData");
-            this.MenuItemAddNewData.Click += new System.EventHandler(this.MenuItemAddNewData_Click);
-            // 
-            // MenuItemFeedOverview
-            // 
-            this.MenuItemFeedOverview.Name = "MenuItemFeedOverview";
-            resources.ApplyResources(this.MenuItemFeedOverview, "MenuItemFeedOverview");
             // 
             // panel1
             // 
@@ -114,21 +63,21 @@
             // listViewFeeds
             // 
             resources.ApplyResources(this.listViewFeeds, "listViewFeeds");
+            this.listViewFeeds.AllowDrop = true;
             this.listViewFeeds.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listViewFeeds.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnFeedTitle});
+            this.listViewFeeds.FullRowSelect = true;
+            this.listViewFeeds.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
             this.listViewFeeds.MultiSelect = false;
             this.listViewFeeds.Name = "listViewFeeds";
             this.listViewFeeds.UseCompatibleStateImageBehavior = false;
             this.listViewFeeds.View = System.Windows.Forms.View.List;
             this.listViewFeeds.SelectedIndexChanged += new System.EventHandler(this.listViewFeeds_SelectedIndexChanged);
             // 
-            // buttonRefresh
+            // columnFeedTitle
             // 
-            resources.ApplyResources(this.buttonRefresh, "buttonRefresh");
-            this.buttonRefresh.BackColor = System.Drawing.SystemColors.Window;
-            this.buttonRefresh.BackgroundImage = global::RSSReader.Properties.Resources.pic_refresh;
-            this.buttonRefresh.Name = "buttonRefresh";
-            this.buttonRefresh.UseVisualStyleBackColor = false;
-            this.buttonRefresh.Click += new System.EventHandler(this.buttonRefresh_Click);
+            resources.ApplyResources(this.columnFeedTitle, "columnFeedTitle");
             // 
             // panel2
             // 
@@ -136,17 +85,10 @@
             this.panel2.Controls.Add(this.listViewFeedItems);
             this.panel2.Name = "panel2";
             // 
-            // panel4
-            // 
-            resources.ApplyResources(this.panel4, "panel4");
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(123)))), ((int)(((byte)(139)))));
-            this.panel4.Controls.Add(this.buttonRefresh);
-            this.panel4.Name = "panel4";
-            // 
             // listViewFeedItems
             // 
             resources.ApplyResources(this.listViewFeedItems, "listViewFeedItems");
-            this.listViewFeedItems.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listViewFeedItems.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listViewFeedItems.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.feedArticle});
             this.listViewFeedItems.FullRowSelect = true;
@@ -160,9 +102,16 @@
             // 
             resources.ApplyResources(this.feedArticle, "feedArticle");
             // 
+            // panel4
+            // 
+            resources.ApplyResources(this.panel4, "panel4");
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(123)))), ((int)(((byte)(139)))));
+            this.panel4.Name = "panel4";
+            // 
             // panel3
             // 
             resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.webBrowser);
             this.panel3.Name = "panel3";
             // 
@@ -171,49 +120,48 @@
             resources.ApplyResources(this.webBrowser, "webBrowser");
             this.webBrowser.Name = "webBrowser";
             // 
+            // buttonManage
+            // 
+            this.buttonManage.BackColor = System.Drawing.Color.Crimson;
+            resources.ApplyResources(this.buttonManage, "buttonManage");
+            this.buttonManage.ForeColor = System.Drawing.SystemColors.Window;
+            this.buttonManage.Name = "buttonManage";
+            this.buttonManage.UseVisualStyleBackColor = false;
+            this.buttonManage.Click += new System.EventHandler(this.buttonManage_Click);
+            // 
             // Mainpage
             // 
             this.AllowDrop = true;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
+            this.Controls.Add(this.buttonManage);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Mainpage";
+            this.ShowIcon = false;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem startToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem rSSFeedsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem MenuItemAddNewData;
-        private System.Windows.Forms.ToolStripMenuItem MenuItemFeedOverview;
-        private System.Windows.Forms.ToolStripMenuItem MenuItemCategories;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox comboBoxChooseCategory;
         private System.Windows.Forms.ListView listViewFeeds;
-        private System.Windows.Forms.Button buttonRefresh;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.ListView listViewFeedItems;
         private System.Windows.Forms.ColumnHeader feedArticle;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.WebBrowser webBrowser;
+        private System.Windows.Forms.Button buttonManage;
+        private System.Windows.Forms.ColumnHeader columnFeedTitle;
     }
 }
 

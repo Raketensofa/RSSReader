@@ -36,7 +36,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>rss_1.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -61,24 +62,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Database.cs" />
-    <Compile Include="FeedListBox.cs">
-      <SubType>Component</SubType>
+    <Compile Include="Source\Database.cs" />
+    <Compile Include="GUI\FormSettings.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FeedListBoxItem.cs" />
+    <Compile Include="GUI\FormSettings.Designer.cs">
+      <DependentUpon>FormSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\PanelAllFeeds.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\PanelAllFeeds.Designer.cs">
+      <DependentUpon>PanelAllFeeds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\PanelCategories.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\PanelCategories.Designer.cs">
+      <DependentUpon>PanelCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\PanelNewFeed.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\PanelNewFeed.Designer.cs">
+      <DependentUpon>PanelNewFeed.cs</DependentUpon>
+    </Compile>
     <Compile Include="Objects\FeedItem.cs" />
-    <Compile Include="GUI\FormCategories.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\FormCategories.Designer.cs">
-      <DependentUpon>FormCategories.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\FormFeed.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\FormFeed.Designer.cs">
-      <DependentUpon>FormFeed.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\Mainpage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,17 +98,23 @@
     <Compile Include="Objects\Feed.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GUI\FormCategories.resx">
-      <DependentUpon>FormCategories.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\FormFeed.resx">
-      <DependentUpon>FormFeed.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\FormSettings.resx">
+      <DependentUpon>FormSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Mainpage.aa.resx">
       <DependentUpon>Mainpage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Mainpage.resx">
       <DependentUpon>Mainpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\PanelAllFeeds.resx">
+      <DependentUpon>PanelAllFeeds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\PanelCategories.resx">
+      <DependentUpon>PanelCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\PanelNewFeed.resx">
+      <DependentUpon>PanelNewFeed.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -129,10 +144,8 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\pic_refresh.png" />
-    <Content Include="rss_1.ico" />
+    <Folder Include="Resources\" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.102.0\build\net20\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.102.0\build\net20\System.Data.SQLite.Core.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

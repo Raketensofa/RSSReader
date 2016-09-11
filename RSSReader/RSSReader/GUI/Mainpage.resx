@@ -117,77 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>945, 36</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="menuStrip1.Text" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="startToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="startToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 32</value>
-  </data>
-  <data name="startToolStripMenuItem.Text" xml:space="preserve">
-    <value>Start</value>
-  </data>
-  <data name="MenuItemCategories.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 32</value>
-  </data>
-  <data name="MenuItemCategories.Text" xml:space="preserve">
-    <value>Kategorien</value>
-  </data>
-  <data name="rSSFeedsToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="rSSFeedsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 32</value>
-  </data>
-  <data name="rSSFeedsToolStripMenuItem.Text" xml:space="preserve">
-    <value>RSS Feeds</value>
-  </data>
-  <data name="MenuItemAddNewData.Size" type="System.Drawing.Size, System.Drawing">
-    <value>212, 32</value>
-  </data>
-  <data name="MenuItemAddNewData.Text" xml:space="preserve">
-    <value>Neuer Feed</value>
-  </data>
-  <data name="MenuItemFeedOverview.Size" type="System.Drawing.Size, System.Drawing">
-    <value>212, 32</value>
-  </data>
-  <data name="MenuItemFeedOverview.Text" xml:space="preserve">
-    <value>Feedübersicht</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="panel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
   <data name="panel1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
+  </data>
+  <data name="comboBoxChooseCategory.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="comboBoxChooseCategory.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri, 12pt</value>
+  </data>
+  <data name="comboBoxChooseCategory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 59</value>
+  </data>
+  <data name="comboBoxChooseCategory.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 32</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="comboBoxChooseCategory.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;comboBoxChooseCategory.Name" xml:space="preserve">
     <value>comboBoxChooseCategory</value>
@@ -199,6 +151,27 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;comboBoxChooseCategory.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="listViewFeeds.Alignment" type="System.Windows.Forms.ListViewAlignment, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="listViewFeeds.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="columnFeedTitle.Width" type="System.Int32, mscorlib">
+    <value>293</value>
+  </data>
+  <data name="listViewFeeds.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri, 12pt</value>
+  </data>
+  <data name="listViewFeeds.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 90</value>
+  </data>
+  <data name="listViewFeeds.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 527</value>
+  </data>
+  <data name="listViewFeeds.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="&gt;&gt;listViewFeeds.Name" xml:space="preserve">
@@ -232,97 +205,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="comboBoxChooseCategory.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="comboBoxChooseCategory.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="comboBoxChooseCategory.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="comboBoxChooseCategory.Size" type="System.Drawing.Size, System.Drawing">
-    <value>294, 33</value>
-  </data>
-  <data name="comboBoxChooseCategory.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;comboBoxChooseCategory.Name" xml:space="preserve">
-    <value>comboBoxChooseCategory</value>
-  </data>
-  <data name="&gt;&gt;comboBoxChooseCategory.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBoxChooseCategory.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;comboBoxChooseCategory.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="listViewFeeds.Alignment" type="System.Windows.Forms.ListViewAlignment, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="listViewFeeds.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="listViewFeeds.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="listViewFeeds.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 33</value>
-  </data>
-  <data name="listViewFeeds.Size" type="System.Drawing.Size, System.Drawing">
-    <value>294, 584</value>
-  </data>
-  <data name="listViewFeeds.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;listViewFeeds.Name" xml:space="preserve">
-    <value>listViewFeeds</value>
-  </data>
-  <data name="&gt;&gt;listViewFeeds.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;listViewFeeds.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;listViewFeeds.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="buttonRefresh.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left</value>
-  </data>
-  <data name="buttonRefresh.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
-  </data>
-  <data name="buttonRefresh.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="buttonRefresh.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="buttonRefresh.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="buttonRefresh.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 49</value>
-  </data>
-  <data name="buttonRefresh.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;buttonRefresh.Name" xml:space="preserve">
-    <value>buttonRefresh</value>
-  </data>
-  <data name="&gt;&gt;buttonRefresh.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonRefresh.Parent" xml:space="preserve">
-    <value>panel4</value>
-  </data>
-  <data name="&gt;&gt;buttonRefresh.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="panel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -333,77 +216,26 @@
   <data name="panel2.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
-  <data name="&gt;&gt;listViewFeedItems.Name" xml:space="preserve">
-    <value>listViewFeedItems</value>
-  </data>
-  <data name="&gt;&gt;listViewFeedItems.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;listViewFeedItems.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;listViewFeedItems.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>295, 34</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>650, 255</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="panel4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>295, 292</value>
-  </data>
-  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>650, 50</value>
-  </data>
-  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
-    <value>panel4</value>
-  </data>
-  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="listViewFeedItems.Alignment" type="System.Windows.Forms.ListViewAlignment, System.Windows.Forms">
     <value>Left</value>
   </data>
   <data name="listViewFeedItems.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
+  <data name="feedArticle.Text" xml:space="preserve">
+    <value>Artikel</value>
+  </data>
+  <data name="feedArticle.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
   <data name="listViewFeedItems.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Calibri, 12pt</value>
   </data>
   <data name="listViewFeedItems.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>0, 3</value>
   </data>
   <data name="listViewFeedItems.Size" type="System.Drawing.Size, System.Drawing">
-    <value>650, 255</value>
+    <value>650, 315</value>
   </data>
   <data name="listViewFeedItems.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -420,11 +252,50 @@
   <data name="&gt;&gt;listViewFeedItems.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="feedArticle.Text" xml:space="preserve">
-    <value>Artikel</value>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>295, -3</value>
   </data>
-  <data name="feedArticle.Width" type="System.Int32, mscorlib">
-    <value>100</value>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>650, 321</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panel4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>295, 316</value>
+  </data>
+  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>650, 26</value>
+  </data>
+  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="panel3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -433,13 +304,13 @@
     <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="webBrowser.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>0, -1</value>
   </data>
   <data name="webBrowser.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>20, 20</value>
   </data>
   <data name="webBrowser.Size" type="System.Drawing.Size, System.Drawing">
-    <value>650, 310</value>
+    <value>648, 309</value>
   </data>
   <data name="webBrowser.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -475,7 +346,37 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
+  </data>
+  <data name="buttonManage.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="buttonManage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri, 14pt, style=Bold</value>
+  </data>
+  <data name="buttonManage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, -3</value>
+  </data>
+  <data name="buttonManage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 96</value>
+  </data>
+  <data name="buttonManage.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="buttonManage.Text" xml:space="preserve">
+    <value>Rss-Feeds und Kategorien verwalten</value>
+  </data>
+  <data name="&gt;&gt;buttonManage.Name" xml:space="preserve">
+    <value>buttonManage</value>
+  </data>
+  <data name="&gt;&gt;buttonManage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonManage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonManage.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1633,35 +1534,11 @@
   <data name="$this.Text" xml:space="preserve">
     <value>RSS Reader</value>
   </data>
-  <data name="&gt;&gt;startToolStripMenuItem.Name" xml:space="preserve">
-    <value>startToolStripMenuItem</value>
+  <data name="&gt;&gt;columnFeedTitle.Name" xml:space="preserve">
+    <value>columnFeedTitle</value>
   </data>
-  <data name="&gt;&gt;startToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MenuItemCategories.Name" xml:space="preserve">
-    <value>MenuItemCategories</value>
-  </data>
-  <data name="&gt;&gt;MenuItemCategories.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rSSFeedsToolStripMenuItem.Name" xml:space="preserve">
-    <value>rSSFeedsToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;rSSFeedsToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MenuItemAddNewData.Name" xml:space="preserve">
-    <value>MenuItemAddNewData</value>
-  </data>
-  <data name="&gt;&gt;MenuItemAddNewData.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MenuItemFeedOverview.Name" xml:space="preserve">
-    <value>MenuItemFeedOverview</value>
-  </data>
-  <data name="&gt;&gt;MenuItemFeedOverview.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;columnFeedTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;feedArticle.Name" xml:space="preserve">
     <value>feedArticle</value>

@@ -1,14 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Xml;
 using System.ServiceModel.Syndication;
 
+/*
+ * author: Carolin Gellner
+ */
 namespace RSSReader.Objects
 {
+
+    /// <summary>
+    /// Repraesentiert einen Feed.
+    /// </summary>
     public class Feed
     {
+
+        #region Fields
 
         private int _Id;
         private string _Name;
@@ -19,52 +26,77 @@ namespace RSSReader.Objects
         private string _Description;
         private string _Title;
 
+        #endregion
 
 
         #region Properties
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int Id
         {
             set { _Id = value; }
             get { return _Id; }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string Name
         {
             set { _Name = value; }
             get { return _Name; }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string Link
         {
             set { _Link = value; }
             get { return _Link; }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int UserCategoryId
         {
             set { _CategoryId = value; }
             get { return _CategoryId; }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string ImageUrl
         {
             set { _ImageUrl = value; }
             get { return _ImageUrl; }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string LastUpdated
         {
             set { _LastUpdated = value; }
             get { return _LastUpdated; }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string Description
         {
             set { _Description = value; }
             get { return _Description; }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string Title
         {
             set { _Title = value; }
@@ -74,9 +106,12 @@ namespace RSSReader.Objects
         #endregion
 
 
+        #region (Public) Methods
+
         /// <summary>
-        /// 
+        /// Ermittelt die FeedItems / Artikel fuer den Feed und speichert diese in einer Liste.
         /// </summary>
+        /// <returns>Liste mit FeedItems (Artikeln)</returns>
         public List<FeedItem> getFeedItems()
         {
             List<FeedItem> feedItemsList = null;
@@ -116,12 +151,9 @@ namespace RSSReader.Objects
             return feedItemsList;
         }
 
-
         /// <summary>
-        /// 
+        /// Ermittelt die Basisinformationen des Feeds und legt diese fest.
         /// </summary>
-        /// <param name="feed"></param>
-        /// <returns></returns>
         public void setFeedInfosFromUrl()
         {
             XmlReader reader = null;
@@ -131,16 +163,14 @@ namespace RSSReader.Objects
             {
                 if (_Link != null)
                 {
-
                     reader = XmlReader.Create(_Link);
                     synFeed = SyndicationFeed.Load(reader);
                     reader.Close();
 
-                   // _ImageUrl = synFeed.ImageUrl.AbsoluteUri;
-                   // _LastUpdated = synFeed.LastUpdatedTime.ToString();
-                    _Description = synFeed.Description.ToString();
-                    _Title = synFeed.Title.ToString();
-
+                    //_ImageUrl = synFeed.ImageUrl.AbsoluteUri
+                    //_LastUpdated = synFeed.LastUpdatedTime.
+                    _Description = synFeed.Description.Text;
+                    _Title = synFeed.Title.Text;
                 }
 
             }
@@ -150,6 +180,7 @@ namespace RSSReader.Objects
             }
         }
 
+        #endregion
 
     }
 }
