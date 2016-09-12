@@ -42,7 +42,7 @@ This section contains general information about the software.
   </tr>
     <tr>
     <td>Database</td>
-    <td></td>
+    <td>SQLite</td>
   </tr>
   <tr>
     <td>Language sourcecode</td>
