@@ -19,7 +19,7 @@ This section contains general information about the software.
     <td>Competition | single - no teamwork</td>
    <tr>
     <td>Honor?</td>
-    <td></td>
+    <td>Yes, one of the winners (place 3 out of 20)</td>
    <tr>
    <tr>
     <td>Period</td>
@@ -48,22 +48,4 @@ This section contains general information about the software.
     <td>Language sourcecode</td>
     <td>English</td>
   </tr>
-    <tr>
-    <td>Language documentation</td>
-    <td>!! German !!</td>
-  </tr>
 </table>
-
-
-
-
-<h2><b>Documentation</b></h2>
-
-<p>
-This section contains the names of the documentation files.
-</p>
-
-<ul>
-<li>JavaDoc: </li>
-<li>Introduction/concept: </li>
-</ul>
