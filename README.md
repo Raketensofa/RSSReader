@@ -44,8 +44,4 @@ This section contains general information about the software.
     <td>Database</td>
     <td>SQLite</td>
   </tr>
-  <tr>
-    <td>Language sourcecode</td>
-    <td>English</td>
-  </tr>
 </table>
