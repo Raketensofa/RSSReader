@@ -18,8 +18,8 @@ This section contains general information about the software.
     <td>Type</td>
     <td>Competition | single - no teamwork</td>
    <tr>
-    <td>Honor?</td>
-    <td>Yes, one of the winners (place 3 out of 20)</td>
+    <td>Result</td>
+    <td>one of the winners (place 3 out of 20)</td>
    <tr>
    <tr>
     <td>Period</td>
@@ -27,10 +27,6 @@ This section contains general information about the software.
    <tr>
     <td>Function</td>
     <td>Represents a RSS-Reader. [48 hour programming contest of it-talents.de]</td>
-  </tr>
-  <tr>
-    <td>Directory sourcecode</td>
-    <td>RSSReader/RSSReader/RSSReader/</td>
   </tr>
     <tr>
     <td>Development environment</td>
